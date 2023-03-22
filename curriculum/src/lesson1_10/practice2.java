@@ -17,8 +17,9 @@ public class practice2 {
 			for (int j = 0; j < num.length; j++) {
 				// 配列[ i番目]の値×配列[ j番目]の値
 				int kuku = num[i] * num[j];
-				System.out.println(num[i] + " × " + num[j] + " = " + kuku);
+				System.out.print(num[i] + " × " + num[j] + " = " + kuku);
 			}
+			System.out.println();
 		}
 	}
 }
