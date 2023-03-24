@@ -9,5 +9,8 @@ Person person2 = new Person("山田", "花子", 22, 1.5, 40);
 person2.print();
 
 Person.printCount();
+
+System.out.println(person1.getLastName());
+System.out.println(person2.setCountLastName("太郎"));
 }
 }
