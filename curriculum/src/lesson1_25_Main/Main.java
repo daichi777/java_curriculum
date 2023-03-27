@@ -25,17 +25,22 @@
 package lesson1_25_Main;
 import java.util.Scanner;
 
-import lesson1_25_shori.Character;
-
+import lesson1_25_shori.Stage;
+import lesson1_25_shori.User;
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("名前を入力してください：");
-        String name = scanner.nextLine();
-        scanner.close();
+    	
+    	Scanner sc = new Scanner(System.in);
 
-        Character character = new Character(name);
-        character.showStatus();
-        System.out.println("さあ冒険に出かけよう！");
-    }
+        System.out.print("名前を入力してください：");
+        String name = sc.nextLine();
+
+        User user = new User(name);
+        Stage stage = new Stage(name);
+
+        user.overWrite();
+        stage.overWrite();
+
+		
+	}
 }
