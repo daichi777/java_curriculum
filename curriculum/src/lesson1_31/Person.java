@@ -46,6 +46,9 @@ public class Person{
 	//問題6：Personクラスにインスタンスメソッド「buy」を定義しましょう。（仮引数：car）
 	//問題7：buyメソッドの中でsetOwnerメソッドとthisを用いてownerフィールドの値をセットしましょう。
 	//問題8：さらに、「〇〇が購入しました」と出力する処理を追加してください。
+	//問題9：引数の型が異なるbuyメソッドを定義しましょう。（仮引数：bicycle）
+
+
 
 		public void buy(Bicycle bicycle) {
 		bicycle.setOwner(this.fullName());
